@@ -40,6 +40,10 @@
 // updateServoMotors changes its name as a global variable had the same name.
 // Some minor fixes.
 
+// Modified by Developer KNM in SLAB Korea (Seoul, Korea SonLab TechEdu)
+// Modified Information : Switch Key Pull Setup | Line 118 ~ 121 (INPUT_PULLUP <-> INPUT) (Modified <-> Before)
+//                        Send information Reverb | Line 143 ~ 144 (!digitalRead(2 or 3)?1023:0 <-> digitalRead(2 or 3)?1023:0) (Modified <-> Before)
+
 typedef enum { 
   input, servomotor, pwm, digital } 
 pinType;
