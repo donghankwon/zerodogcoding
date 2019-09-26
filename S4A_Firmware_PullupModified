@@ -136,8 +136,8 @@ void sendSensorValues()
     ScratchBoardSensorReport(sensorIndex, sensorValues[sensorIndex]);
 
   //send digital sensor values
-  ScratchBoardSensorReport(6, digitalRead(2)?1023:0);
-  ScratchBoardSensorReport(7, digitalRead(3)?1023:0);
+  ScratchBoardSensorReport(6, !digitalRead(2)?1023:0);
+  ScratchBoardSensorReport(7, !digitalRead(3)?1023:0);
 }
 
 void insertionSort(unsigned int* array, unsigned int n)
